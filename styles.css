@@ -1,0 +1,226 @@
+body::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  body::-webkit-scrollbar-track {
+    background-color: #0D1F23;
+  }
+  
+  body::-webkit-scrollbar-thumb {
+    background-color: #0D1F23;
+    outline: 1px solid #5A636A;
+    border-radius: 10px;
+  }
+  
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: verdana;
+    scroll-behavior: smooth;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+.intro{
+    background-color: #0D1F23;
+    height: calc(100vh-60px);
+    width: 100%;
+    height: 100vh;
+}
+nav{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    background-color: #2D4A53;
+    width: 100%;
+    height: 60px;
+    z-index: 999;
+}
+.nav_link_list{
+    margin-left: auto;
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    padding-right: 1rem;
+    
+}
+.name{
+    color: #e0e5e9;
+    font-family: verdana;
+}
+a{
+    color: #e0e5e9;
+    text-decoration: none;
+    font-family: verdana;
+    font-weight: 600;
+    padding: .5rem;
+    transition: all .5s;
+}
+a:hover{
+    background-color: #0D1F23;
+    border-radius: 10px;
+}
+.intro{
+    display: flex;
+
+}
+.about_a{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+.about_b{
+    width: 50%;
+    height: 100vh;
+    position: relative;
+}
+
+.intro_heading{
+    color: #5A636A;
+    margin-top: 10rem;
+}
+.description{
+    font-size: 6rem;
+    color: #AFB3B7;
+}
+.silly{
+    color: #5A636A;
+}
+.btn_about{
+    font-size: 1.6rem;
+    padding: .5rem;
+    background-color: #2D4A53;
+    border: none;
+    border-radius: 5px;
+    margin-top: 3rem;
+    cursor: pointer;
+    font-family: verdana;
+    font-weight: 600;
+    color: #AFB3B7;
+    transition: all 0.5s;
+}
+.btn_about:hover{
+    background-color: #2D4A53;
+    color: aliceblue;
+    
+
+}
+.aba{
+    margin-left: 3rem;
+    position: relative;
+    top: 2rem;
+}
+.cube{
+            animation: cubic 15s ease-in-out  infinite;    
+}
+
+.cube_1{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #AFB3B7;
+    border-radius: 30px;
+    position: absolute;
+}
+.cube_2{
+    width: 300px;
+    height: 300px;
+    border: 2px solid #AFB3B7;
+    border-radius: 30px;
+    transform: rotate(45deg);
+    
+}
+.about_b{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes cubic{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+/* --------------------------------------------- */
+
+.skills{
+    background-color: #0D1F2A;
+    height: 100vh;
+    width: 100%;
+}
+.skill_heading{
+    color: #e0e5e9;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
+.skill_flexbox{
+    max-width: 90%;
+    height: 85vh;
+    margin: auto;
+}
+.flex_a{
+    max-width: 95%;
+    height: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.flex_b{
+    max-width: 95%;
+    height: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.cards{
+    height: 16rem;
+    width: 24rem;
+    border-radius: 10px;
+    transition: all .5s;
+}
+.cards:hover{
+    transform: scale(1.1);
+}
+
+.card_a{
+    background-image: url(logo_a.png);
+    background-position: center;
+    background-size: contain;
+}
+.card_b{
+    background-image: url(logo_b.png);
+    background-position: center;
+    background-size: contain;
+}
+.card_c{
+    background-image: url(logo_c.png);
+    background-position: center;
+    background-size: contain;
+}
+.card_d{
+    background-image: url(logo_c.png);
+    background-position: center;
+    background-size: contain;
+}
+.card_e{
+    background-image: url(logo_c.png);
+    background-position: center;
+    background-size: contain;
+}
+.card_f{
+    background-image: url(logo_c.png);
+    background-position: center;
+    background-size: contain;
+}
